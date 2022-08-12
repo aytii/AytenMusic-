@@ -13,11 +13,11 @@ start_text = """
 
 \n\n𝗜 𝗔𝗺 🎸𝐒𝐨𝐧𝐠 𝐏𝐥𝐚𝐲 𝐁𝐨𝐭[🎶](https://telegra.ph/file/6cb884fe1cb943ec12df1.mp4)
 
-I'M Music Bot By @TamilBots 🤖
+I'M Music Bot By @BlogOfQuliyev 🤖
 
 𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗡𝗮𝗺𝗲 𝗢𝗳 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁... 😍🥰🤗
 
-𝐄𝐠. ```/song Faded```
+𝐄𝐠. ```/song Sweater Weather```
 """
 
 owner_help = """
@@ -32,13 +32,13 @@ owner_help = """
 @app.on_message(filters.create(ignore_blacklisted_users) & filters.command("start"))
 async def start(client, message):
     chat_id = message.chat.id
-    user_id = message.from_user["id"]
-    name = message.from_user["first_name"]
+    user_id = message.from_user.id
+    name = message.from_user.mention
     if message.chat.type == "private":
         btn = InlineKeyboardMarkup(
-           [[InlineKeyboardButton(text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓 👬", url="http://t.me/TamilSupport"),
+           [[InlineKeyboardButton(text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓 👬", url="http://t.me/LegendSup"),
              InlineKeyboardButton(
-                        text="𝐀𝐃𝐃 𝐌𝐄 🤗", url="http://t.me/SongProBot?startgroup=true"
+                        text="𝐀𝐃𝐃 𝐌𝐄 🤗", url="http://t.me/AytenMusicBot?startgroup=true"
                     )
                 ]
             ]
